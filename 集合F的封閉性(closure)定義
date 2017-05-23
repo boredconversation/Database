@@ -1,0 +1,14 @@
+集合F的封閉性(closure)定義?
+
+假設有一組FD為F，而由F可推導出更多成立的FD。此時，F
+可以推論得到的FD的集合稱為集合F的封閉性(closure)，並表
+示為 F+
+ Example
+ 每個部門只有一位經理，則Dept_NoMgr_ssn
+ 又每個經理只有一個電話號碼，則Mgr_ssnMgr_phone
+ 由上述兩個功能相依性可得，Dept_No Mgr_phone
+ Example
+ 假設有個功能相依性集合F = {Ssn → {Ename, Bdate, Address,
+Dnumber} , Dnumber → {Dname, Dmgr_ssn} }
+ 則可從F推導出以下額外的功能相依性：
+ Ssn → {Dname, Dmgr_ssn}
