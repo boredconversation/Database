@@ -29,3 +29,7 @@ t1[Y] = t2[Y] 也一定成立
  員工的社會安全號碼和專案編號可唯一決定員工每週在
 專案中工作的時數
  {SSN, PNUMBER} -> HOURS
+
+完全功能相依 (full functional dependency)
+ 如FD X→Y是完全功能相依，則由X移除任何屬性A，則FD就無法
+成立
